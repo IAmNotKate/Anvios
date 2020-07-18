@@ -14,13 +14,10 @@ class AddPostsIntoBdRepository(private val anviosDao: AnviosDao) :
     AddPostsRepository {
 
     override fun add(source: List<Post>) {
-        val posts = ArrayList<PostWithUserRelation>()
-        source.forEach {
-            posts.add(
-                PostWithUserRelation(
-                    PostModelToEntityMapper.map(it),
-                    UserModelToEntityMapper.map(it.user)
-                )
+        val posts = source.map {
+            PostWithUserRelation(
+                PostModelToEntityMapper.map(it),
+                UserModelToEntityMapper.map(it.user)
             )
         }
         anviosDao.insert(posts)

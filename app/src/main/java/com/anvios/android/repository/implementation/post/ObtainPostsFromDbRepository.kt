@@ -15,15 +15,11 @@ class ObtainRecyclerPostsFromDbRepository(
     override fun obtain(): Observable<MutableList<Post>> {
         return anviosDao.selectPostsWithUser()
             .map { postsView ->
-                val posts: MutableList<Post> = ArrayList()
-                postsView.forEach {
-                    posts.add(
-                        PostRelationToModelMapper.map(
-                            it
-                        )
+                postsView.map {
+                    PostRelationToModelMapper.map(
+                        it
                     )
-                }
-                posts
+                } as MutableList<Post>
             }
     }
 }

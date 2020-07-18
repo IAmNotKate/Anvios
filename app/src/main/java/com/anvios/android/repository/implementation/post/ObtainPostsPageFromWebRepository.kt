@@ -15,13 +15,9 @@ class ObtainPostsPageFromWebRepository(
     override fun obtain(page: Int): Single<List<Post>> {
         return api.getPostsPage(page)
             .map { postsResponse ->
-                val posts: MutableList<Post> = ArrayList()
-                postsResponse.forEach {
-                    posts.add(
-                        PostResponseToModelMapper.map(it)
-                    )
+                postsResponse.map {
+                    PostResponseToModelMapper.map(it)
                 }
-                posts as List<Post>
             }
     }
 }
