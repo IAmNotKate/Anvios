@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Anvios</string>
+
+    <!--Login labels-->
+    <string name="sign_in_label">Sign In</string>
+    <string name="sign_up_label">Sign Up</string>
+
+    <!--Login view-->
+    <string name="username_field_hint">Username</string>
+    <string name="email_field_hint">Email</string>
+    <string name="name_field_hint">Name</string>
+    <string name="surname_field_hint">Surname</string>
+    <string name="password_field_hint">Password</string>
+    <string name="sign_up_suggestion_button">Not a member? Sign Up now!</string>
+    <string name="sign_in_button">Login</string>
+    <string name="sign_up_button">Create account</string>
+    <string name="sign_up_error">Error occurred during register.</string>
+    <string name="sign_in_error">Error occurred during login.</string>
+
+    <!--Posts labels-->
+    <string name="posts_label">Posts</string>
+    <string name="post_item_label">Post</string>
+    <string name="create_post_label">Create</string>
+
+    <!--Posts fragment-->
+    <string name="loading_page_error">Error occurred during loading, check you Internet connection.</string>
+
+    <!--User labels-->
+    <string name="user_label">You</string>
+
+    <!--Create post fragment-->
+    <string name="create_button">Create</string>
+    <string name="title_field_hint">Title</string>
+    <string name="text_field_hint">Text</string>
+    <string name="uploading_post_error">Error occurred during uploading, check you Internet connection.</string>
+</resources>

@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="LoginEdit" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/rounded_edge_background_edit</item>
+        <item name="android:paddingVertical">@dimen/edit_text_vertical_padding</item>
+        <item name="android:paddingHorizontal">@dimen/edit_text_horizontal_padding</item>
+    </style>
+
+    <style name="MainButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_background</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainButton.Action">
+        <item name="android:backgroundTint">@color/action_button_background_state_list</item>
+        <item name="android:textColor">@color/action_button_text_state_list</item>
+    </style>
+
+    <style name="MainButton.Navigation">
+        <item name="android:background">@drawable/rounded_edge_background_navigation_state_list</item>
+        <item name="android:textColor">@color/navigation_button_text_state_list</item>
+    </style>
+
+    <style name="SignUpSuggestionButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

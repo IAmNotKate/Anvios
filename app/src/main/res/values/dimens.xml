@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="view_rounded_corners">32dp</dimen>
+    <dimen name="button_stroke_width">2dp</dimen>
+    <dimen name="edit_text_vertical_padding">12dp</dimen>
+    <dimen name="edit_text_horizontal_padding">24dp</dimen>
+    
+    <dimen name="posts_recycler_items_distance">2dp</dimen>
+</resources>

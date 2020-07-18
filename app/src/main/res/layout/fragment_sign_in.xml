@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/layout_margin"
+    tools:context=".ui.login.signin.SignInFragment">
+
+    <EditText
+        android:id="@+id/usernameField"
+        style="@style/LoginEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:autofillHints="username"
+        android:hint="@string/username_field_hint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/passwordField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        style="@style/LoginEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:autofillHints="password"
+        android:hint="@string/password_field_hint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/signInButton"
+        app:layout_constraintTop_toBottomOf="@id/usernameField" />
+
+    <Button
+        android:id="@+id/signInButton"
+        style="@style/MainButton.Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:text="@string/sign_in_button"
+        app:layout_constraintBottom_toTopOf="@id/signUpSuggestionButton"
+        app:layout_constraintTop_toBottomOf="@id/passwordField" />
+
+    <Button
+        android:id="@+id/signUpSuggestionButton"
+        style="@style/SignUpSuggestionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_suggestion_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signInButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
